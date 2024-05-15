@@ -87,9 +87,8 @@ console.log('Exercise 8 Result:', maxOfThree(5, 10, 8));
 
 // Exercise 9
 function calculateTip(billAmount, tipPercentage) {
-    billAmount = 20
-    tipPercentage = 50
-    return (billAmount + tipPercentage);
+    let tipAmount = (billAmount * (tipPercentage / 100));    
+        return tipAmount
 }
 
 console.log('Exercise 9 Result:', calculateTip(50, 20));
@@ -97,13 +96,10 @@ console.log('Exercise 9 Result:', calculateTip(50, 20));
 // Exercise 10
 function convertTemperature(temperature, scale) {
     if (scale === 'C') {
-        // Convert Celsius to Fahrenheit
         return (temperature * 9 / 5) + 32;
     } else if (scale === 'F') {
-        // Convert Fahrenheit to Celsius
         return (temperature - 32) * 5 / 9;
     } else {
-        // Handle invalid scale
         return "Invalid scale. Please provide 'C' for Celsius or 'F' for Fahrenheit.";
     }
 }
